@@ -1,9 +1,7 @@
 package de.hegmanns.training.aoc2025.day03;
 
-import static org.assertj.core.api.Assertions.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import de.hegmanns.training.AocFileLoader;
-import de.hegmanns.training.aoc2025.Day02;
 import de.hegmanns.training.aoc2025.Day03;
 import org.junit.jupiter.api.Test;
 

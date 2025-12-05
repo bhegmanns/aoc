@@ -1,7 +1,6 @@
 package de.hegmanns.training.aoc2025.day02;
 
 import java.util.*;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class IdRange {
