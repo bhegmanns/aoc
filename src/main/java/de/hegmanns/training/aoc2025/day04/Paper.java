@@ -6,11 +6,11 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Paper {
-    private Position position;
+    private Position2D position2D;
     private TopologyForPapers placement;
 
     public Paper(int xPosition, int yPosition) {
-        this(new Position(xPosition, yPosition), null);
+        this(new Position2D(xPosition, yPosition), null);
     }
 
     public int getCountOfPaperInAdjacentPositions() {
@@ -18,8 +18,8 @@ public class Paper {
             return 0;
         }
 
-        int xPosition = position.xPosition();
-        int yPosition = position.yPosition();
+        int xPosition = position2D.xPosition();
+        int yPosition = position2D.yPosition();
 
         int sum = 0;
         sum += placement.getCountOfPapers(xPosition, yPosition-1);
@@ -39,7 +39,7 @@ public class Paper {
     @Override
     public String toString() {
         return "Paper{" +
-                "position=" + position +
+                "position=" + position2D +
                 ", placement=" + placement +
                 '}';
     }
